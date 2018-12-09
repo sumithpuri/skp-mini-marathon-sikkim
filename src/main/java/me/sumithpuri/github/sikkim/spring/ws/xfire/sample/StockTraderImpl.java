@@ -42,7 +42,7 @@ public class StockTraderImpl implements StockTrader {
 		System.out.println("Certification         Brainbench Spring 2.5 Certification");
 		System.out.println("Certificate URL	      https://goo.gl/X321kd");
 		System.out.println("[Developer Notes]     [01] Use Java Version 9.0+ Compiler");
-		System.out.println("[Developer Notes]     [02] Use Apache Tomcat 9.0+ Compiler");
+		System.out.println("[Developer Notes]     [02] Use Apache Tomcat 9.0+ Server");
 		System.out.println();
 	}
 	
