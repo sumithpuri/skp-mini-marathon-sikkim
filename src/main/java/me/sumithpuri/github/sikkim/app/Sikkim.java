@@ -1,9 +1,4 @@
-package me.sumithpuri.github.sikkim.spring.ws.xfire.client.sample;
-
-import org.apache.xbean.spring.context.ClassPathXmlApplicationContext;
-import org.springframework.context.ApplicationContext;
-
-import me.sumithpuri.github.sikkim.spring.ws.xfire.sample.StockTrader;
+package me.sumithpuri.github.sikkim.app;
 
 /**
  * MIT License
@@ -33,32 +28,32 @@ import me.sumithpuri.github.sikkim.spring.ws.xfire.sample.StockTrader;
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES  OR  OTHER  LIABILITY, WHETHER IN AN ACTION  OF  CONTRACT, TORT OR 
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-public class SpringWSClient {
+public class Sikkim {
+
+	// XXX Do Include the [src/main/resources] in the Classpath Before Compiling/Running
+	public static void main(String[] args) throws Exception {
 	
-	static {
-		
 		System.out.println("Copyright (c) 2018-19,	Sumith Kumar Puri");
 		System.out.println();
 		System.out.println("Project Codename      Sikkim");
-		System.out.println("Project Description   Core Spring (Web Services Client)");
+		System.out.println("Project Description   Core Spring (Web Services)");
 		System.out.println("Certification         Brainbench Spring 2.5 Certification");
 		System.out.println("Certificate URL	      https://goo.gl/X321kd");
 		System.out.println("[Developer Notes]     [01] Use Java Version 9.0+ Compiler");
 		System.out.println("[Developer Notes]     [02] Use Apache Tomcat 9.0+ Server");
 		System.out.println();
-	}
-	
-	public static void main(String args[]) throws Exception {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring-xfire-client.xml");
-		
-		StockTrader stockTrader = (StockTrader) context.getBean("stockService");
-	
-		System.out.println("\nInvoking Web Service...");
-		String[] stocks = stockTrader.getStockQuotes();
 		System.out.println();
-		for(String str: stocks) {
-			System.out.println(str);
-		}
+		System.out.println("Example of Spring Web Services (XFire)");
+		System.out.println("--------------------------------------");
+		
+		System.out.println("000. Make Sure that Dependencies & Resources are in ClassPath");
+		System.out.println("01a. Deploy the Web Arcive On Apache Tomcat (9.0+)");
+		System.out.println("01b. Make Sure that Web Services are Deployed Correctly");
+		System.out.println("000. WSDL Location > http://localhost:8080/sikkim/sikkim?wsdl");
+		System.out.println("02a. Make Sure the Client Classpath contains spring-xfire-client.xml");
+		System.out.println("02b. Next, Start the SpringWSClient from Eclipse or Command Line");
+		System.out.println("003. You should be able to see results from the Web Services Invocation");
+		System.out.println();
 	}
 }

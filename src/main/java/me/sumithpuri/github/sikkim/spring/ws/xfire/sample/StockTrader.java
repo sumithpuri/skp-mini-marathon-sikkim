@@ -3,6 +3,9 @@ package me.sumithpuri.github.sikkim.spring.ws.xfire.sample;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
+import org.apache.xbean.spring.context.ClassPathXmlApplicationContext;
+import org.springframework.context.ApplicationContext;
+
 /**
  * MIT License
  *

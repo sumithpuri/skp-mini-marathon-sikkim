@@ -61,6 +61,23 @@
                 </excludes>
             </configuration>
         </plugin>
+        <plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>me.sumithpuri.github.sikkim.app.Sikkim</mainClass>
+							<cleanupDaemonThreads>true</cleanupDaemonThreads>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
     </plugins>
 	</build>
 	<description>Brainbench Spring 2.5 Certification (+ Spring In Action Samples)</description>
