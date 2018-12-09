@@ -46,12 +46,12 @@ public class Sikkim {
 		System.out.println();
 		System.out.println("Example of Spring Web Services (XFire)");
 		System.out.println("--------------------------------------");
-		
+		System.out.println("000. You may choose to Import the Project in Eclipse or Other IDE");
 		System.out.println("000. Make Sure that Dependencies & Resources are in ClassPath");
 		System.out.println("01a. Deploy the Web Arcive On Apache Tomcat (9.0+)");
 		System.out.println("01b. Make Sure that Web Services are Deployed Correctly");
 		System.out.println("000. WSDL Location > http://localhost:8080/sikkim/sikkim?wsdl");
-		System.out.println("02a. Make Sure the Client Classpath contains spring-xfire-client.xml");
+		System.out.println("02a. Make Sure the Client Classpath contains [spring-xfire-client.xml]");
 		System.out.println("02b. Next, Start the SpringWSClient from Eclipse or Command Line");
 		System.out.println("003. You should be able to see results from the Web Services Invocation");
 		System.out.println();
